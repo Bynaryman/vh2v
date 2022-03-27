@@ -36,10 +36,9 @@ git clone https://github.com/YosysHQ/yosy
 git clone https://github.com/ghdl/ghdl
 git clone https://github.com/ghdl/ghdl-yosys-plugin
 git clone https://github.dev/Bynaryman/vh2v
-
 ```
 
-At this point, you should such folders:
+At this point, you should see such folders:
 ```
 user@linux:~/translation_tools$ ls $TRANSLATION_DIR 
 ghdl  ghdl-yosys-plugin  vh2v  yosys
