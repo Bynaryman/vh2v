@@ -62,9 +62,9 @@ $ sudo apt-get install build-essential clang bison flex \
 Please, refer to [Yosys installation](https://github.com/YosysHQ/yosys#building-from-source) for more details.
 
 Let's proceed with GHDL installation:  
-Important note, GHDL is written in [ada](https://en.wikipedia.org/wiki/Ada_(programming_language)) and therefore needs an ada compiler. The latter can be installed on ubuntu as such:
+Important note /!\: GHDL is written in [ada](https://en.wikipedia.org/wiki/Ada_(programming_language)) and therefore needs an ada compiler. The latter can be installed on ubuntu as such:
 ```
-sudo apt install gcc-ada
+sudo apt install gnat-gps
 ```
 
 Then, the installation:
@@ -79,10 +79,19 @@ cd $TRANSLATION_DIR
 We continue with ghdl-yosys-plugin:
 ```
 cd ghdl-yosys-plugin
-
+make
+sudo make install
 cd $TRANSLATION_DIR
 ```
 
+Finally, testing vh2v:
+```
+cd vh2v
+python3 vh2v.py --input_file my_top_vhdl.vhd --output_dir /tmp
+cd /tmp
+ls -l *.v  # observe result files
+cd $TRANSLATION_DIR
+```
 ## Achievements
 
 This script has generated verilog in the context of [MPW5](https://platform.efabless.com/open_shuttle_program/5) [ASIC](https://en.wikipedia.org/wiki/Application-specific_integrated_circuit) [submission](https://github.com/Bynaryman/wrapped_teras).
