@@ -32,7 +32,7 @@ TRANSLATION_DIR=$("pwd")
 
 then, clone all repositories (including this one):
 ```
-git clone https://github.com/YosysHQ/yosy
+git clone https://github.com/YosysHQ/yosys
 git clone https://github.com/ghdl/ghdl
 git clone https://github.com/ghdl/ghdl-yosys-plugin
 git clone https://github.dev/Bynaryman/vh2v
