@@ -35,7 +35,7 @@ then, clone all repositories (including this one):
 git clone https://github.com/YosysHQ/yosys
 git clone https://github.com/ghdl/ghdl
 git clone https://github.com/ghdl/ghdl-yosys-plugin
-git clone https://github.dev/Bynaryman/vh2v
+git clone https://github.com/Bynaryman/vh2v
 ```
 
 At this point, you should see such folders:
